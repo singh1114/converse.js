@@ -23636,19 +23636,19 @@ with(obj||{}){
 __p+='<field var="'+
 ((__t=(name))==null?'':__t)+
 '">';
- if (_.isArray(value)) { 
+ if (_.isArray(value)) {
 __p+='\n    ';
- _.each(value,function(arrayValue) { 
+ _.each(value,function(arrayValue) {
 __p+='<value>'+
 ((__t=(arrayValue))==null?'':__t)+
 '</value>';
- }); 
+ });
 __p+='\n';
- } else { 
+ } else {
 __p+='\n    <value>'+
 ((__t=(value))==null?'':__t)+
 '</value>\n';
- } 
+ }
 __p+='</field>\n';
 }
 return __p;
@@ -23661,9 +23661,9 @@ with(obj||{}){
 __p+='<option value="'+
 ((__t=(value))==null?'':__t)+
 '" ';
- if (selected) { 
+ if (selected) {
 __p+=' selected="selected" ';
- } 
+ }
 __p+=' >'+
 ((__t=(label))==null?'':__t)+
 '</option>\n';
@@ -23680,9 +23680,9 @@ __p+='<label>'+
 '</label>\n<select name="'+
 ((__t=(name))==null?'':__t)+
 '"  ';
- if (multiple) { 
+ if (multiple) {
 __p+=' multiple="multiple" ';
- } 
+ }
 __p+='>'+
 ((__t=(options))==null?'':__t)+
 '</select>\n';
@@ -23727,25 +23727,25 @@ define('tpl!form_username', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (label) { 
+ if (label) {
 __p+='\n<label>\n    '+
 ((__t=(label))==null?'':__t)+
 '\n</label>\n';
- } 
+ }
 __p+='\n<div class="input-group">\n    <input name="'+
 ((__t=(name))==null?'':__t)+
 '" type="'+
 ((__t=(type))==null?'':__t)+
 '"\n        ';
- if (value) { 
+ if (value) {
 __p+=' value="'+
 ((__t=(value))==null?'':__t)+
 '" ';
- } 
+ }
 __p+='\n        ';
- if (required) { 
+ if (required) {
 __p+=' class="required" ';
- } 
+ }
 __p+=' />\n    <span title="'+
 ((__t=(domain))==null?'':__t)+
 '">'+
@@ -23760,25 +23760,25 @@ define('tpl!form_input', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (label) { 
+ if (label) {
 __p+='\n<label>\n    '+
 ((__t=(label))==null?'':__t)+
 '\n</label>\n';
- } 
+ }
 __p+='\n<input name="'+
 ((__t=(name))==null?'':__t)+
 '" type="'+
 ((__t=(type))==null?'':__t)+
 '" \n    ';
- if (value) { 
+ if (value) {
 __p+=' value="'+
 ((__t=(value))==null?'':__t)+
 '" ';
- } 
+ }
 __p+='\n    ';
- if (required) { 
+ if (required) {
 __p+=' class="required" ';
- } 
+ }
 __p+=' >\n';
 }
 return __p;
@@ -23789,11 +23789,11 @@ define('tpl!form_captcha', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (label) { 
+ if (label) {
 __p+='\n<label>\n    '+
 ((__t=(label))==null?'':__t)+
 '\n</label>\n';
- } 
+ }
 __p+='\n<img src="data:'+
 ((__t=(type))==null?'':__t)+
 ';base64,'+
@@ -23801,9 +23801,9 @@ __p+='\n<img src="data:'+
 '">\n<input name="'+
 ((__t=(name))==null?'':__t)+
 '" type="text" ';
- if (required) { 
+ if (required) {
 __p+=' class="required" ';
- } 
+ }
 __p+=' >\n\n\n';
 }
 return __p;
@@ -24251,7 +24251,7 @@ define("polyfill", function(){});
     // then the name by which the pluggable object may be referenced on the
     // __super__ object (inside overrides).
     function PluginSocket (plugged, name) {
-        this.name = name; 
+        this.name = name;
         this.plugged = plugged;
         this.plugged.__super__ = {};
         this.plugins = {};
@@ -26810,7 +26810,7 @@ var _extension = {
 
     // Escape special regex characters in id.
     itemRe = new RegExp("^" + this.name.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&") + "-");
-    
+
     // Remove id-tracking item (e.g., "foo").
     local.removeItem(this.name);
 
@@ -26927,10 +26927,10 @@ return Backbone.BrowserStorage;
 }));
 
 /*!
- * Backbone.Overview 
+ * Backbone.Overview
  *
  * Copyright (c) 2014, JC Brand <jc@opkode.com>
- * Licensed under the Mozilla Public License (MPL) 
+ * Licensed under the Mozilla Public License (MPL)
  */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -29828,15 +29828,15 @@ performAction: function anonymous(yytext,yyleng,yylineno,yy,yystate,$$,_$) {
 
 var $0 = $$.length - 1;
 switch (yystate) {
-case 1: return { type : 'GROUP', expr: $$[$0-1] }; 
+case 1: return { type : 'GROUP', expr: $$[$0-1] };
 break;
-case 2:this.$ = { type: 'TERNARY', expr: $$[$0-4], truthy : $$[$0-2], falsey: $$[$0] }; 
+case 2:this.$ = { type: 'TERNARY', expr: $$[$0-4], truthy : $$[$0-2], falsey: $$[$0] };
 break;
 case 3:this.$ = { type: "OR", left: $$[$0-2], right: $$[$0] };
 break;
 case 4:this.$ = { type: "AND", left: $$[$0-2], right: $$[$0] };
 break;
-case 5:this.$ = { type: 'LT', left: $$[$0-2], right: $$[$0] }; 
+case 5:this.$ = { type: 'LT', left: $$[$0-2], right: $$[$0] };
 break;
 case 6:this.$ = { type: 'LTE', left: $$[$0-2], right: $$[$0] };
 break;
@@ -29850,11 +29850,11 @@ case 10:this.$ = { type: 'EQ', left: $$[$0-2], right: $$[$0] };
 break;
 case 11:this.$ = { type: 'MOD', left: $$[$0-2], right: $$[$0] };
 break;
-case 12:this.$ = { type: 'GROUP', expr: $$[$0-1] }; 
+case 12:this.$ = { type: 'GROUP', expr: $$[$0-1] };
 break;
-case 13:this.$ = { type: 'VAR' }; 
+case 13:this.$ = { type: 'VAR' };
 break;
-case 14:this.$ = { type: 'NUM', val: Number(yytext) }; 
+case 14:this.$ = { type: 'NUM', val: Number(yytext) };
 break;
 }
 },
@@ -30140,7 +30140,7 @@ next:function () {
         if (this._input === "") {
             return this.EOF;
         } else {
-            this.parseError('Lexical error on line '+(this.yylineno+1)+'. Unrecognized text.\n'+this.showPosition(), 
+            this.parseError('Lexical error on line '+(this.yylineno+1)+'. Unrecognized text.\n'+this.showPosition(),
                     {text: "", token: null, line: this.yylineno});
         }
     },
@@ -30349,29 +30349,29 @@ with(obj||{}){
 __p+='<div class="flyout box-flyout">\n    <div class="dragresize dragresize-top"></div>\n    <div class="dragresize dragresize-topleft"></div>\n    <div class="dragresize dragresize-left"></div>\n    <div class="chat-head chat-head-chatbox">\n        <a class="chatbox-btn close-chatbox-button icon-close" title="'+
 ((__t=(info_close))==null?'':__t)+
 '"></a>\n        <div class="chat-title">\n            ';
- if (url) { 
+ if (url) {
 __p+='\n                <a href="'+
 ((__t=(url))==null?'':__t)+
 '" target="_blank" rel="noopener" class="user">\n            ';
- } 
+ }
 __p+='\n                    '+
 ((__t=( title ))==null?'':__t)+
 '\n            ';
- if (url) { 
+ if (url) {
 __p+='\n                </a>\n            ';
- } 
+ }
 __p+='\n        </div>\n        <p class="user-custom-message"><p/>\n    </div>\n    <div class="chat-body">\n        <div class="chat-content"></div>\n        <div class="new-msgs-indicator hidden">▼ '+
 ((__t=( unread_msgs ))==null?'':__t)+
 ' ▼</div>\n        ';
- if (show_textarea) { 
+ if (show_textarea) {
 __p+='\n        <form class="sendXMPPMessage" action="" method="post">\n            ';
- if (show_toolbar) { 
+ if (show_toolbar) {
 __p+='\n                <ul class="chat-toolbar no-text-select"></ul>\n            ';
- } 
+ }
 __p+='\n        <textarea\n            type="text"\n            class="chat-textarea"\n            placeholder="'+
 ((__t=(label_personal_message))==null?'':__t)+
 '"/>\n        </form>\n        ';
- } 
+ }
 __p+='\n    </div>\n</div>\n';
 }
 return __p;
@@ -30439,29 +30439,29 @@ define('tpl!toolbar', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (show_emoticons)  { 
+ if (show_emoticons)  {
 __p+='\n    <li class="toggle-smiley icon-happy" title="'+
 ((__t=(label_insert_smiley))==null?'':__t)+
 '">\n        <ul>\n            <li><a class="icon-smiley" href="#" data-emoticon=":)"></a></li>\n            <li><a class="icon-wink" href="#" data-emoticon=";)"></a></li>\n            <li><a class="icon-grin" href="#" data-emoticon=":D"></a></li>\n            <li><a class="icon-tongue" href="#" data-emoticon=":P"></a></li>\n            <li><a class="icon-cool" href="#" data-emoticon="8)"></a></li>\n            <li><a class="icon-evil" href="#" data-emoticon=">:)"></a></li>\n            <li><a class="icon-confused" href="#" data-emoticon=":S"></a></li>\n            <li><a class="icon-wondering" href="#" data-emoticon=":\\"></a></li>\n            <li><a class="icon-angry" href="#" data-emoticon=">:("></a></li>\n            <li><a class="icon-sad" href="#" data-emoticon=":("></a></li>\n            <li><a class="icon-shocked" href="#" data-emoticon=":O"></a></li>\n            <li><a class="icon-thumbs-up" href="#" data-emoticon="(^.^)b"></a></li>\n            <li><a class="icon-heart" href="#" data-emoticon="<3"></a></li>\n        </ul>\n    </li>\n';
- } 
+ }
 __p+='\n';
- if (show_call_button)  { 
+ if (show_call_button)  {
 __p+='\n<li class="toggle-call"><a class="icon-phone" title="'+
 ((__t=(label_start_call))==null?'':__t)+
 '"></a></li>\n';
- } 
+ }
 __p+='\n';
- if (show_occupants_toggle)  { 
+ if (show_occupants_toggle)  {
 __p+='\n<li class="toggle-occupants"><a class="icon-hide-users" title="'+
 ((__t=(label_hide_occupants))==null?'':__t)+
 '"></a></li>\n';
- } 
+ }
 __p+='\n';
- if (show_clear_button)  { 
+ if (show_clear_button)  {
 __p+='\n<li class="toggle-clear"><a class="icon-remove" title="'+
 ((__t=(label_clear))==null?'':__t)+
 '"></a></li>\n';
- } 
+ }
 __p+='\n';
 }
 return __p;
@@ -31343,17 +31343,17 @@ __p+='<form class="pure-form set-xmpp-status" action="" method="post">\n    <spa
 '</option>\n            <option value="away">'+
 ((__t=(label_away))==null?'':__t)+
 '</option>\n            ';
- if (include_offline_state)  { 
+ if (include_offline_state)  {
 __p+='\n            <option value="offline">'+
 ((__t=(label_offline))==null?'':__t)+
 '</option>\n            ';
- } 
+ }
 __p+='\n            ';
- if (allow_logout)  { 
+ if (allow_logout)  {
 __p+='\n            <option value="logout">'+
 ((__t=(label_logout))==null?'':__t)+
 '</option>\n            ';
- } 
+ }
 __p+='\n        </select>\n    </span>\n</form>\n';
 }
 return __p;
@@ -31375,9 +31375,9 @@ define('tpl!controlbox', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='<div class="flyout box-flyout">\n    <div class="dragresize dragresize-top"></div>\n    <div class="dragresize dragresize-topleft"></div>\n    <div class="dragresize dragresize-left"></div>\n    <div class="chat-head controlbox-head">\n        <ul id="controlbox-tabs"></ul>\n        ';
- if (!sticky_controlbox) { 
+ if (!sticky_controlbox) {
 __p+='\n            <a class="chatbox-btn close-chatbox-button icon-close"></a>\n        ';
- } 
+ }
 __p+='\n    </div>\n    <div class="controlbox-panes"></div>\n</div>\n';
 }
 return __p;
@@ -31399,41 +31399,41 @@ define('tpl!login_panel', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='<form class="pure-form pure-form-stacked converse-form" id="converse-login" method="post">\n    ';
- if (auto_login) { 
+ if (auto_login) {
 __p+='\n        <span class="spinner login-submit"/>\n    ';
- } 
+ }
 __p+='\n    ';
- if (!auto_login) { 
+ if (!auto_login) {
 __p+='\n        ';
- if (authentication == LOGIN || authentication == EXTERNAL) { 
+ if (authentication == LOGIN || authentication == EXTERNAL) {
 __p+='\n            <label>'+
 ((__t=(label_username))==null?'':__t)+
 '</label>\n            <input type="text" name="jid" placeholder="'+
 ((__t=(placeholder_username))==null?'':__t)+
 '">\n            ';
- if (authentication !== EXTERNAL) { 
+ if (authentication !== EXTERNAL) {
 __p+='\n                <label>'+
 ((__t=(label_password))==null?'':__t)+
 '</label>\n                <input type="password" name="password" placeholder="'+
 ((__t=(placeholder_password))==null?'':__t)+
 '">\n            ';
- } 
+ }
 __p+='\n            <input class="pure-button button-primary" type="submit" value="'+
 ((__t=(label_login))==null?'':__t)+
 '">\n            <span class="conn-feedback"></span>\n        ';
- } 
+ }
 __p+='\n        ';
- if (authentication == ANONYMOUS) { 
+ if (authentication == ANONYMOUS) {
 __p+='\n            <input type="pure-button button-primary" class="submit login-anon" value="'+
 ((__t=(label_anon_login))==null?'':__t)+
 '"/>\n        ';
- } 
+ }
 __p+='\n        ';
- if (authentication == PREBIND) { 
+ if (authentication == PREBIND) {
 __p+='\n            <p>Disconnected.</p>\n        ';
- } 
+ }
 __p+='\n    ';
- } 
+ }
 __p+='\n</form>\n';
 }
 return __p;
@@ -31500,9 +31500,9 @@ define('tpl!pending_contact', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (allow_chat_pending_contacts)  { 
+ if (allow_chat_pending_contacts)  {
 __p+='\n<a class="open-chat"href="#">\n';
- } 
+ }
 __p+='\n<span class="pending-contact-name" title="Name: '+
 ((__t=(fullname))==null?'':__t)+
 '\nJID: '+
@@ -31510,9 +31510,9 @@ __p+='\n<span class="pending-contact-name" title="Name: '+
 '">'+
 ((__t=(fullname))==null?'':__t)+
 '</span> \n';
- if (allow_chat_pending_contacts)  { 
+ if (allow_chat_pending_contacts)  {
 __p+='\n</a>\n';
- } 
+ }
 __p+='\n<a class="remove-xmpp-contact icon-remove" title="'+
 ((__t=(desc_remove))==null?'':__t)+
 '" href="#"></a>\n';
@@ -31525,9 +31525,9 @@ define('tpl!requesting_contact', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (allow_chat_pending_contacts)  { 
+ if (allow_chat_pending_contacts)  {
 __p+='\n<a class="open-chat"href="#">\n';
- } 
+ }
 __p+='\n<span class="req-contact-name" title="Name: '+
 ((__t=(fullname))==null?'':__t)+
 '\nJID: '+
@@ -31535,9 +31535,9 @@ __p+='\n<span class="req-contact-name" title="Name: '+
 '">'+
 ((__t=(fullname))==null?'':__t)+
 '</span>\n';
- if (allow_chat_pending_contacts)  { 
+ if (allow_chat_pending_contacts)  {
 __p+='\n</a>\n';
- } 
+ }
 __p+='\n<span class="request-actions">\n    <a class="accept-xmpp-request icon-checkmark" title="'+
 ((__t=(desc_accept))==null?'':__t)+
 '" href="#"></a>\n    <a class="decline-xmpp-request icon-close" title="'+
@@ -31556,67 +31556,67 @@ __p+='<form class="pure-form roster-filter-group input-button-group">\n    <inpu
 '" class="roster-filter"\n           placeholder="'+
 ((__t=(placeholder))==null?'':__t)+
 '"\n           ';
- if (filter_type === 'state') { 
+ if (filter_type === 'state') {
 __p+='  style="display: none" ';
- } 
+ }
 __p+=' >\n    <select class="state-type" ';
- if (filter_type !== 'state') { 
+ if (filter_type !== 'state') {
 __p+='  style="display: none" ';
- } 
+ }
 __p+=' >\n        <option value="">'+
 ((__t=(label_any))==null?'':__t)+
 '</option>\n        <option ';
- if (chat_state === 'online') { 
+ if (chat_state === 'online') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n            value="online">'+
 ((__t=(label_online))==null?'':__t)+
 '</option>\n        <option ';
- if (chat_state === 'chat') { 
+ if (chat_state === 'chat') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n            value="chat">'+
 ((__t=(label_chatty))==null?'':__t)+
 '</option>\n        <option ';
- if (chat_state === 'dnd') { 
+ if (chat_state === 'dnd') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n            value="dnd">'+
 ((__t=(label_busy))==null?'':__t)+
 '</option>\n        <option ';
- if (chat_state === 'away') { 
+ if (chat_state === 'away') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n            value="away">'+
 ((__t=(label_away))==null?'':__t)+
 '</option>\n        <option ';
- if (chat_state === 'xa') { 
+ if (chat_state === 'xa') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n            value="xa">'+
 ((__t=(label_xa))==null?'':__t)+
 '</option>\n        <option ';
- if (chat_state === 'offline') { 
+ if (chat_state === 'offline') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n            value="offline">'+
 ((__t=(label_offline))==null?'':__t)+
 '</option>\n    </select>\n    <select class="filter-type">\n        <option ';
- if (filter_type === 'contacts') { 
+ if (filter_type === 'contacts') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n                value="contacts">'+
 ((__t=(label_contacts))==null?'':__t)+
 '</option>\n        <option ';
- if (filter_type === 'groups') { 
+ if (filter_type === 'groups') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n                value="groups">'+
 ((__t=(label_groups))==null?'':__t)+
 '</option>\n        <option ';
- if (filter_type === 'state') { 
+ if (filter_type === 'state') {
 __p+=' selected="selected" ';
- } 
+ }
 __p+='\n                value="state">'+
 ((__t=(label_state))==null?'':__t)+
 '</option>\n    </select>\n</form>\n';
@@ -31643,11 +31643,11 @@ __p+='<a class="open-chat" title="'+
 '"></span>'+
 ((__t=(fullname))==null?'':__t)+
 '</a>\n';
- if (allow_contact_removal) { 
+ if (allow_contact_removal) {
 __p+='\n<a class="remove-xmpp-contact icon-remove" title="'+
 ((__t=(desc_remove))==null?'':__t)+
 '" href="#"></a>\n';
- } 
+ }
 __p+='\n';
 }
 return __p;
@@ -31673,7 +31673,7 @@ return __p;
     ], factory);
 }(this, function (
             converse,
-            converse_api, 
+            converse_api,
             tpl_group_header,
             tpl_pending_contact,
             tpl_requesting_contact,
@@ -33003,7 +33003,7 @@ return __p;
                         return;
                     }
                     var $jid_input = $form.find('input[name=jid]'),
-                        jid = $jid_input.val(),
+                        jid = $jid_input.val() + '@lab.gdy.club',
                         $pw_input = $form.find('input[name=password]'),
                         password = $pw_input.val(),
                         errors = false;
@@ -33360,9 +33360,9 @@ with(obj||{}){
 __p+='<div class="chat-area">\n    <div class="chat-content"></div>\n    <div class="new-msgs-indicator hidden">▼ '+
 ((__t=( unread_msgs ))==null?'':__t)+
 ' ▼</div>\n    <form class="sendXMPPMessage" action="" method="post">\n        ';
- if (show_toolbar) { 
+ if (show_toolbar) {
 __p+='\n            <ul class="chat-toolbar no-text-select"></ul>\n        ';
- } 
+ }
 __p+='\n        <textarea type="text" class="chat-textarea" \n            placeholder="'+
 ((__t=(label_message))==null?'':__t)+
 '"/>\n    </form>\n</div>\n';
@@ -33431,11 +33431,11 @@ define('tpl!chatroom_sidebar', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='<!-- <div class="occupants"> -->\n';
- if (allow_muc_invitations) { 
+ if (allow_muc_invitations) {
 __p+='\n<form class="pure-form room-invite">\n    <input class="invited-contact" placeholder="'+
 ((__t=(label_invitation))==null?'':__t)+
 '" type="text"/>\n</form>\n';
- } 
+ }
 __p+='\n<p class="occupants-heading">'+
 ((__t=(label_occupants))==null?'':__t)+
 ':</p>\n<ul class="occupant-list"></ul>\n<!-- </div> -->\n';
@@ -33474,29 +33474,29 @@ __p+='<li class="'+
 ' occupant" id="'+
 ((__t=(id))==null?'':__t)+
 '"\n    ';
- if (role === "moderator") { 
+ if (role === "moderator") {
 __p+='\n       title="'+
 ((__t=(desc_moderator))==null?'':__t)+
 ' '+
 ((__t=(hint_occupant))==null?'':__t)+
 '"\n    ';
- } 
+ }
 __p+='\n    ';
- if (role === "occupant") { 
+ if (role === "occupant") {
 __p+='\n       title="'+
 ((__t=(desc_occupant))==null?'':__t)+
 ' '+
 ((__t=(hint_occupant))==null?'':__t)+
 '"\n    ';
- } 
+ }
 __p+='\n    ';
- if (role === "visitor") { 
+ if (role === "visitor") {
 __p+='\n       title="'+
 ((__t=(desc_visitor))==null?'':__t)+
 ' '+
 ((__t=(hint_occupant))==null?'':__t)+
 '"\n    ';
- } 
+ }
 __p+='>'+
 ((__t=(nick))==null?'':__t)+
 '</li>\n';
@@ -33519,71 +33519,71 @@ __p+='<!-- FIXME: check markup in mockup -->\n<div class="room-info">\n<p class=
 '</p>\n<p class="room-info"><strong>'+
 ((__t=(label_features))==null?'':__t)+
 '</strong>\n    <ul>\n        ';
- if (passwordprotected) { 
+ if (passwordprotected) {
 __p+='\n        <li class="room-info locked">'+
 ((__t=(label_requires_auth))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (hidden) { 
+ if (hidden) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_hidden))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (membersonly) { 
+ if (membersonly) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_requires_invite))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (moderated) { 
+ if (moderated) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_moderated))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (nonanonymous) { 
+ if (nonanonymous) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_non_anon))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (open) { 
+ if (open) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_open_room))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (persistent) { 
+ if (persistent) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_permanent_room))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (publicroom) { 
+ if (publicroom) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_public))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (semianonymous) { 
+ if (semianonymous) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_semi_anon))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (temporary) { 
+ if (temporary) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_temp_room))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n        ';
- if (unmoderated) { 
+ if (unmoderated) {
 __p+='\n        <li class="room-info">'+
 ((__t=(label_unmoderated))==null?'':__t)+
 '</li>\n        ';
- } 
+ }
 __p+='\n    </ul>\n</p>\n</div>\n';
 }
 return __p;
@@ -33617,13 +33617,13 @@ __p+='<form class="pure-form pure-form-stacked converse-form add-chatroom" actio
 '</label>\n        <input type="text" name="chatroom" class="new-chatroom-name" placeholder="'+
 ((__t=(label_room_name))==null?'':__t)+
 '"/>\n        ';
- if (server_input_type != 'hidden') { 
+ if (server_input_type != 'hidden') {
 __p+='\n            <label'+
 ((__t=(server_label_global_attr))==null?'':__t)+
 '>'+
 ((__t=(label_server))==null?'':__t)+
 '</label>\n        ';
- } 
+ }
 __p+='\n        <input type="'+
 ((__t=(server_input_type))==null?'':__t)+
 '" name="server" class="new-chatroom-server" placeholder="'+
@@ -37025,7 +37025,7 @@ return __p;
 }(this, function (Strophe, $build, $iq, $msg, $pres) {
 
 Strophe.addNamespace('RSM', 'http://jabber.org/protocol/rsm');
-   
+
 Strophe.RSM = function(options) {
   this.attribs = ['max', 'first', 'last', 'after', 'before', 'index', 'count'];
 
@@ -40484,33 +40484,33 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   //   - fixed capitalization in call to int2bigInt in randBigInt
   //     (thanks to Emili Evripidou, Reinhold Behringer, and Samuel Macaleese for finding that bug)
   //
-  // v 5.1  8 Oct 2007 
+  // v 5.1  8 Oct 2007
   //   - renamed inverseModInt_ to inverseModInt since it doesn't change its parameters
   //   - added functions GCD and randBigInt, which call GCD_ and randBigInt_
   //   - fixed a bug found by Rob Visser (see comment with his name below)
   //   - improved comments
   //
   // This file is public domain.   You can use it for any purpose without restriction.
-  // I do not guarantee that it is correct, so use it at your own risk.  If you use 
-  // it for something interesting, I'd appreciate hearing about it.  If you find 
+  // I do not guarantee that it is correct, so use it at your own risk.  If you use
+  // it for something interesting, I'd appreciate hearing about it.  If you find
   // any bugs or make any improvements, I'd appreciate hearing about those too.
-  // It would also be nice if my name and URL were left in the comments.  But none 
+  // It would also be nice if my name and URL were left in the comments.  But none
   // of that is required.
   //
   // This code defines a bigInt library for arbitrary-precision integers.
-  // A bigInt is an array of integers storing the value in chunks of bpe bits, 
+  // A bigInt is an array of integers storing the value in chunks of bpe bits,
   // little endian (buff[0] is the least significant word).
   // Negative bigInts are stored two's complement.  Almost all the functions treat
   // bigInts as nonnegative.  The few that view them as two's complement say so
-  // in their comments.  Some functions assume their parameters have at least one 
+  // in their comments.  Some functions assume their parameters have at least one
   // leading zero element. Functions with an underscore at the end of the name put
-  // their answer into one of the arrays passed in, and have unpredictable behavior 
-  // in case of overflow, so the caller must make sure the arrays are big enough to 
-  // hold the answer.  But the average user should never have to call any of the 
-  // underscored functions.  Each important underscored function has a wrapper function 
-  // of the same name without the underscore that takes care of the details for you.  
-  // For each underscored function where a parameter is modified, that same variable 
-  // must not be used as another argument too.  So, you cannot square x by doing 
+  // their answer into one of the arrays passed in, and have unpredictable behavior
+  // in case of overflow, so the caller must make sure the arrays are big enough to
+  // hold the answer.  But the average user should never have to call any of the
+  // underscored functions.  Each important underscored function has a wrapper function
+  // of the same name without the underscore that takes care of the details for you.
+  // For each underscored function where a parameter is modified, that same variable
+  // must not be used as another argument too.  So, you cannot square x by doing
   // multMod_(x,x,n).  You must use squareMod_(x,n) instead, or do y=dup(x); multMod_(x,y,n).
   // Or simply use the multMod(x,x,n) function without the underscore, where
   // such issues never arise, because non-underscored functions never change
@@ -40522,20 +40522,20 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   // that when a function is called repeatedly with same-sized parameters, it only allocates
   // memory on the first call.
   //
-  // Note that for cryptographic purposes, the calls to Math.random() must 
+  // Note that for cryptographic purposes, the calls to Math.random() must
   // be replaced with calls to a better pseudorandom number generator.
   //
   // In the following, "bigInt" means a bigInt with at least one leading zero element,
-  // and "integer" means a nonnegative integer less than radix.  In some cases, integer 
+  // and "integer" means a nonnegative integer less than radix.  In some cases, integer
   // can be negative.  Negative bigInts are 2s complement.
-  // 
+  //
   // The following functions do not modify their inputs.
   // Those returning a bigInt, string, or Array will dynamically allocate memory for that value.
   // Those returning a boolean will return the integer 0 (false) or 1 (true).
-  // Those returning boolean or int will not allocate memory except possibly on the first 
+  // Those returning boolean or int will not allocate memory except possibly on the first
   // time they're called with a given parameter size.
-  // 
-  // bigInt  add(x,y)               //return (x+y) for bigInts x and y.  
+  //
+  // bigInt  add(x,y)               //return (x+y) for bigInts x and y.
   // bigInt  addInt(x,n)            //return (x+n) where x is a bigInt and n is an integer.
   // string  bigInt2str(x,base)     //return a string form of bigInt x in a given base, with 2 <= base <= 95
   // int     bitSize(x)             //return how many bits long the bigInt x is, not counting leading zeros
@@ -40568,8 +40568,8 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   //
   //
   // The following functions each have a non-underscored version, which most users should call instead.
-  // These functions each write to a single parameter, and the caller is responsible for ensuring the array 
-  // passed in is large enough to hold the result. 
+  // These functions each write to a single parameter, and the caller is responsible for ensuring the array
+  // passed in is large enough to hold the result.
   //
   // void    addInt_(x,n)          //do x=x+n where x is a bigInt and n is an integer
   // void    add_(x,y)             //do x=x+y for bigInts x and y
@@ -40585,9 +40585,9 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   // void    randTruePrime_(ans,k) //do ans = a random k-bit true random prime (not just probable prime) with 1 in the msb.
   // void    sub_(x,y)             //do x=x-y for bigInts x and y. Negative answers will be 2s complement.
   //
-  // The following functions do NOT have a non-underscored version. 
+  // The following functions do NOT have a non-underscored version.
   // They each write a bigInt result to one or more parameters.  The caller is responsible for
-  // ensuring the arrays passed in are large enough to hold the results. 
+  // ensuring the arrays passed in are large enough to hold the results.
   //
   // void addShift_(x,y,ys)       //do x=x+(y<<(ys*bpe))
   // void carry_(x)               //do carries and borrows so each element of the bigInt x fits in bpe bits.
@@ -40658,7 +40658,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
 
   var one=int2bigInt(1,1,1);     //constant used in powMod_()
 
-  //the following global variables are scratchpad memory to 
+  //the following global variables are scratchpad memory to
   //reduce dynamic memory allocation in the inner loop
   var t=new Array(0);
   var ss=t;       //used in mult_()
@@ -40677,7 +40677,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
 
   var primes=t, pows=t, s_i=t, s_i2=t, s_R=t, s_rm=t, s_q=t, s_n1=t;
   var s_a=t, s_r2=t, s_n=t, s_b=t, s_d=t, s_x1=t, s_x2=t, s_aa=t; //used in randTruePrime_()
-    
+
   var rpprb=t; //used in randProbPrimeRounds() (which also uses "primes")
 
   ////////////////////////////////////////////////////////////////////////////////////////
@@ -40743,7 +40743,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     for (i=0;i<mr_r.length;i++)
       for (j=1;j<mask;j<<=1)
         if (x[i] & j) {
-          s=(k<mr_r.length+bpe ? k : 0); 
+          s=(k<mr_r.length+bpe ? k : 0);
            i=mr_r.length;
            j=mask;
         } else
@@ -40757,7 +40757,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     s = k*bpe + i - 1;
     /* end */
 
-    if (s)                
+    if (s)
       rightShift_(mr_r,s);
 
     powMod_(mr_a,mr_r,x);
@@ -40775,7 +40775,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         return 0;
       }
     }
-    return 1;  
+    return 1;
   }
 
   //returns how many bits long the bigInt is, not counting leading zeros.
@@ -40818,12 +40818,12 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
 
   //return a k-bit probable random prime using n rounds of Miller Rabin (after trial division with small primes)
   function randProbPrimeRounds(k,n) {
-    var ans, i, divisible, B; 
+    var ans, i, divisible, B;
     B=30000;  //B is largest prime to use in trial division
     ans=int2bigInt(0,k,0);
-    
+
     //optimization: try larger and smaller B to find the best limit.
-    
+
     if (primes.length==0)
       primes=findPrimes(30000);  //check for divisibility by primes <=30000
 
@@ -40831,23 +40831,23 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
       rpprb=dup(ans);
 
     for (;;) { //keep trying random values for ans until one appears to be prime
-      //optimization: pick a random number times L=2*3*5*...*p, plus a 
+      //optimization: pick a random number times L=2*3*5*...*p, plus a
       //   random element of the list of all numbers in [0,L) not divisible by any prime up to p.
       //   This can reduce the amount of random number generation.
-      
+
       randBigInt_(ans,k,0); //ans = a random odd number to check
-      ans[0] |= 1; 
+      ans[0] |= 1;
       divisible=0;
-    
+
       //check ans for divisibility by small primes up to B
       for (i=0; (i<primes.length) && (primes[i]<=B); i++)
         if (modInt(ans,primes[i])==0 && !equalsInt(ans,primes[i])) {
           divisible=1;
           break;
-        }      
-      
+        }
+
       //optimization: change millerRabin so the base can be bigger than the number being checked, then eliminate the while here.
-      
+
       //do n rounds of Miller Rabin, with random bases less than ans
       for (i=0; i<n && !divisible; i++) {
         randBigInt_(rpprb,k,0);
@@ -40856,10 +40856,10 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         if (!millerRabin(ans,rpprb))
           divisible=1;
       }
-      
+
       if(!divisible)
         return ans;
-    }  
+    }
   }
 
   //return a new bigInt equal to (x mod n) for bigInts x and n.
@@ -40885,28 +40885,28 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
 
   //return (x**y mod n) where x,y,n are bigInts and ** is exponentiation.  0**0=1. Faster for odd n.
   function powMod(x,y,n) {
-    var ans=expand(x,n.length);  
+    var ans=expand(x,n.length);
     powMod_(ans,trim(y,2),trim(n,2),0);  //this should work without the trim, but doesn't
     return trim(ans,1);
   }
 
   //return (x-y) for bigInts x and y.  Negative answers will be 2s complement
   function sub(x,y) {
-    var ans=expand(x,(x.length>y.length ? x.length+1 : y.length+1)); 
+    var ans=expand(x,(x.length>y.length ? x.length+1 : y.length+1));
     sub_(ans,y);
     return trim(ans,1);
   }
 
-  //return (x+y) for bigInts x and y.  
+  //return (x+y) for bigInts x and y.
   function add(x,y) {
-    var ans=expand(x,(x.length>y.length ? x.length+1 : y.length+1)); 
+    var ans=expand(x,(x.length>y.length ? x.length+1 : y.length+1));
     add_(ans,y);
     return trim(ans,1);
   }
 
   //return (x**(-1) mod n) for bigInts x and n.  If no inverse exists, it returns null
   function inverseMod(x,n) {
-    var ans=expand(x,n.length); 
+    var ans=expand(x,n.length);
     var s;
     s=inverseMod_(ans,n);
     return s ? trim(ans,1) : null;
@@ -41001,10 +41001,10 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
       add_(s_R,s_i);   //now s_R is in the range [s_i+1,2*s_i]
 
       copy_(s_n,s_q);
-      mult_(s_n,s_R); 
+      mult_(s_n,s_R);
       multInt_(s_n,2);
       addInt_(s_n,1);    //s_n=2*s_R*s_q+1
-      
+
       copy_(s_r2,s_R);
       multInt_(s_r2,2);  //s_r2=2*s_R
 
@@ -41013,10 +41013,10 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         if (modInt(s_n,primes[j])==0 && !equalsInt(s_n,primes[j])) {
           divisible=1;
           break;
-        }      
+        }
 
       if (!divisible)    //if it passes small primes check, then try a single Miller-Rabin base 2
-        if (!millerRabinInt(s_n,2)) //this line represents 75% of the total runtime for randTruePrime_ 
+        if (!millerRabinInt(s_n,2)) //this line represents 75% of the total runtime for randTruePrime_
           divisible=1;
 
       if (!divisible) {  //if it passes that test, continue checking s_n
@@ -41111,7 +41111,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         qp=Math.floor((xp+B)/(yp+D));
         if (q!=qp)
           break;
-        t= A-q*C;   A=C;   C=t;    //  do (A,B,xp, C,D,yp) = (C,D,yp, A,B,xp) - q*(0,0,0, C,D,yp)      
+        t= A-q*C;   A=C;   C=t;    //  do (A,B,xp, C,D,yp) = (C,D,yp, A,B,xp) - q*(0,0,0, C,D,yp)
         t= B-q*D;   B=D;   D=t;
         t=xp-q*yp; xp=yp; yp=t;
       }
@@ -41124,7 +41124,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         copy_(T,x);
         copy_(x,y);
         copy_(y,T);
-      } 
+      }
     }
     if (y[0]==0)
       return;
@@ -41168,7 +41168,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         halve_(eg_u);
         if (!(eg_A[0]&1) && !(eg_B[0]&1)) { //if eg_A==eg_B==0 mod 2
           halve_(eg_A);
-          halve_(eg_B);      
+          halve_(eg_B);
         } else {
           add_(eg_A,n);  halve_(eg_A);
           sub_(eg_B,x);  halve_(eg_B);
@@ -41179,7 +41179,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         halve_(eg_v);
         if (!(eg_C[0]&1) && !(eg_D[0]&1)) { //if eg_C==eg_D==0 mod 2
           halve_(eg_C);
-          halve_(eg_D);      
+          halve_(eg_D);
         } else {
           add_(eg_C,n);  halve_(eg_C);
           sub_(eg_D,x);  halve_(eg_D);
@@ -41226,7 +41226,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     }
   }
 
-  //this deprecated function is for backward compatibility only. 
+  //this deprecated function is for backward compatibility only.
   function inverseModInt_(x,n) {
      return inverseModInt(x,n);
   }
@@ -41261,7 +41261,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         halve_(eg_u);
         if (!(eg_A[0]&1) && !(eg_B[0]&1)) { //if A==B==0 mod 2
           halve_(eg_A);
-          halve_(eg_B);      
+          halve_(eg_B);
         } else {
           add_(eg_A,y);  halve_(eg_A);
           sub_(eg_B,x);  halve_(eg_B);
@@ -41272,7 +41272,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         halve_(v);
         if (!(eg_C[0]&1) && !(eg_D[0]&1)) { //if C==D==0 mod 2
           halve_(eg_C);
-          halve_(eg_D);      
+          halve_(eg_D);
         } else {
           add_(eg_C,y);  halve_(eg_C);
           sub_(eg_D,x);  halve_(eg_D);
@@ -41315,7 +41315,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   function greaterShift(x,y,shift) {
     var i, kx=x.length, ky=y.length;
     var k=((kx+shift)<ky) ? (kx+shift) : ky;
-    for (i=ky-1-shift; i<kx && i>=0; i++) 
+    for (i=ky-1-shift; i<kx && i>=0; i++)
       if (x[i]>0)
         return 1; //if there are nonzeros in x to the left of the first column of y, then x is bigger
     for (i=kx-1+shift; i<ky; i++)
@@ -41359,10 +41359,10 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     copy_(r,x);
     for (ky=y.length;y[ky-1]==0;ky--); //ky is number of elements in y, not including leading zeros
 
-    //normalize: ensure the most significant element of y has its highest bit set  
+    //normalize: ensure the most significant element of y has its highest bit set
     b=y[ky-1];
     for (a=0; b; a++)
-      b>>=1;  
+      b>>=1;
     a=bpe-a;  //a is how many bits to shift so that the high order bit of y is leftmost in its array element
     leftShift_(y,a);  //multiply both by 1<<a now, then divide both by that at the end
     leftShift_(r,a);
@@ -41382,11 +41382,11 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
       else
         q[i-ky]=Math.floor((r[i]*radix+r[i-1])/y[ky-1]);
 
-      //The following for(;;) loop is equivalent to the commented while loop, 
+      //The following for(;;) loop is equivalent to the commented while loop,
       //except that the uncommented version avoids overflow.
       //The commented loop comes from HAC, which assumes r[-1]==y[-1]==0
       //  while (q[i-ky]*(y[ky-1]*radix+y[ky-2]) > r[i]*radix*radix+r[i-1]*radix+r[i-2])
-      //    q[i-ky]--;    
+      //    q[i-ky]--;
       for (;;) {
         y2=(ky>1 ? y[ky-2] : 0)*q[i-ky];
         c=y2;
@@ -41397,7 +41397,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         y1=y1 & mask;
         c = (c - y1) / radix;
 
-        if (c==r[i] ? y1==r[i-1] ? y2>(i>1 ? r[i-2] : 0) : y1>r[i-1] : c>r[i]) 
+        if (c==r[i] ? y1==r[i-1] ? y2>(i>1 ? r[i-2] : 0) : y1>r[i-1] : c>r[i])
           q[i-ky]--;
         else
           break;
@@ -41444,7 +41444,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   //the returned array stores the bigInt in bpe-bit chunks, little endian (buff[0] is least significant word)
   //Pad the array with leading zeros so that it has at least minSize elements.
   //There will always be at least one leading 0 element.
-  function int2bigInt(t,bits,minSize) {   
+  function int2bigInt(t,bits,minSize) {
     var i,k, buff;
     k=Math.ceil(bits/bpe)+1;
     k=minSize>k ? minSize : k;
@@ -41453,7 +41453,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     return buff;
   }
 
-  //return the bigInt given a string representation in a given base.  
+  //return the bigInt given a string representation in a given base.
   //Pad the array with leading zeros so that it has at least minSize elements.
   //If base=-1, then it reads in a space-separated list of array elements in decimal.
   //The array will always have at least one leading zero, unless base=-1.
@@ -41469,7 +41469,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         y[0]=parseInt(s,10);
         x=y;
         d=s.indexOf(',',0);
-        if (d<1) 
+        if (d<1)
           break;
         s=s.substring(d+1);
         if (s.length==0)
@@ -41562,7 +41562,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   function bigInt2str(x,base) {
     var i,t,s="";
 
-    if (s6.length!=x.length) 
+    if (s6.length!=x.length)
       s6=dup(x);
     else
       copy_(s6,x);
@@ -41601,7 +41601,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
       x[i]=0;
   }
 
-  //do x=y on bigInt x and integer y.  
+  //do x=y on bigInt x and integer y.
   function copyInt_(x,n) {
     var i,c;
     for (c=n,i=0;i<x.length;i++) {
@@ -41665,7 +41665,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
       for (i=x.length; i>=k; i--) //left shift x by k elements
         x[i]=x[i-k];
       for (;i>=0;i--)
-        x[i]=0;  
+        x[i]=0;
       n%=bpe;
     }
     if (!n)
@@ -41834,7 +41834,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     else
       copy_(s4,x);
     if (s5.length!=x.length)
-      s5=dup(x);  
+      s5=dup(x);
     divide_(s4,n,s5,x);  //x = remainder of s4 / n
   }
 
@@ -41857,7 +41857,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
     var i,j,d,c,kx,kn,k;
     for (kx=x.length; kx>0 && !x[kx-1]; kx--);  //ignore leading zeros in x
     k=kx>n.length ? 2*kx : 2*n.length; //k=# elements in the product, which is twice the elements in the larger of x and n
-    if (s0.length!=k) 
+    if (s0.length!=k)
       s0=new Array(k);
     copyInt_(s0,0);
     for (i=0;i<kx;i++) {
@@ -41900,7 +41900,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
         if (y[0]&1)
           multMod_(x,s7,n);
         divInt_(y,2);
-        squareMod_(s7,n); 
+        squareMod_(s7,n);
       }
       return;
     }
@@ -41931,7 +41931,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
           return;
         }
         k2=1<<(bpe-1);
-      }    
+      }
       mont_(x,x,n,np);
 
       if (k2 & y[k1]) //if next bit is a 1
@@ -41940,10 +41940,10 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
   }
 
 
-  //do x=x*y*Ri mod n for bigInts x,y,n, 
-  //  where Ri = 2**(-kn*bpe) mod n, and kn is the 
-  //  number of elements in the n array, not 
-  //  counting leading zeros.  
+  //do x=x*y*Ri mod n for bigInts x,y,n,
+  //  where Ri = 2**(-kn*bpe) mod n, and kn is the
+  //  number of elements in the n array, not
+  //  counting leading zeros.
   //x array must have at least as many elemnts as the n array
   //It's OK if x and y are the same variable.
   //must have:
@@ -41957,12 +41957,12 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
 
     if (sa.length!=kn)
       sa=new Array(kn);
-      
+
     copyInt_(sa,0);
 
     for (;kn>0 && n[kn-1]==0;kn--); //ignore leading zeros of n
     for (;ky>0 && y[ky-1]==0;ky--); //ignore leading zeros of y
-    ks=sa.length-1; //sa will never have more than this many nonzero elements.  
+    ks=sa.length-1; //sa will never have more than this many nonzero elements.
 
     //the following loop consumes 95% of the runtime for randTruePrime_() and powMod_() for large numbers
     for (i=0; i<kn; i++) {
@@ -41971,7 +41971,7 @@ define("crypto.mode-ctr", ["crypto.cipher-core"], function(){});
       c=(t+ui*n[0]);
       c = (c - (c & mask)) / radix;
       t=x[i];
-      
+
       //do sa=(sa+x[i]*y+ui*n)/b   where b=2**bpe.  Loop is unrolled 5-fold for speed
       j=1;
       for (;j<ky-4;) {
@@ -45226,7 +45226,7 @@ define('tpl!toolbar_otr', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='';
- if (allow_otr)  { 
+ if (allow_otr)  {
 __p+='\n    <li class="toggle-otr '+
 ((__t=(otr_status_class))==null?'':__t)+
 '" title="'+
@@ -45234,29 +45234,29 @@ __p+='\n    <li class="toggle-otr '+
 '">\n        <span class="chat-toolbar-text">'+
 ((__t=(otr_translated_status))==null?'':__t)+
 '</span>\n        ';
- if (otr_status == UNENCRYPTED) { 
+ if (otr_status == UNENCRYPTED) {
 __p+='\n            <span class="icon-unlocked"></span>\n        ';
- } 
+ }
 __p+='\n        ';
- if (otr_status == UNVERIFIED) { 
+ if (otr_status == UNVERIFIED) {
 __p+='\n            <span class="icon-lock"></span>\n        ';
- } 
+ }
 __p+='\n        ';
- if (otr_status == VERIFIED) { 
+ if (otr_status == VERIFIED) {
 __p+='\n            <span class="icon-lock"></span>\n        ';
- } 
+ }
 __p+='\n        ';
- if (otr_status == FINISHED) { 
+ if (otr_status == FINISHED) {
 __p+='\n            <span class="icon-unlocked"></span>\n        ';
- } 
+ }
 __p+='\n        <ul>\n            ';
- if (otr_status == UNENCRYPTED) { 
+ if (otr_status == UNENCRYPTED) {
 __p+='\n               <li><a class="start-otr" href="#">'+
 ((__t=(label_start_encrypted_conversation))==null?'':__t)+
 '</a></li>\n            ';
- } 
+ }
 __p+='\n            ';
- if (otr_status != UNENCRYPTED) { 
+ if (otr_status != UNENCRYPTED) {
 __p+='\n               <li><a class="start-otr" href="#">'+
 ((__t=(label_refresh_encrypted_conversation))==null?'':__t)+
 '</a></li>\n               <li><a class="end-otr" href="#">'+
@@ -45264,17 +45264,17 @@ __p+='\n               <li><a class="start-otr" href="#">'+
 '</a></li>\n               <li><a class="auth-otr" data-scheme="smp" href="#">'+
 ((__t=(label_verify_with_smp))==null?'':__t)+
 '</a></li>\n            ';
- } 
+ }
 __p+='\n            ';
- if (otr_status == UNVERIFIED) { 
+ if (otr_status == UNVERIFIED) {
 __p+='\n               <li><a class="auth-otr" data-scheme="fingerprint" href="#">'+
 ((__t=(label_verify_with_fingerprints))==null?'':__t)+
 '</a></li>\n            ';
- } 
+ }
 __p+='\n            <li><a href="http://www.cypherpunks.ca/otr/help/3.2.0/levels.php" target="_blank" rel="noopener">'+
 ((__t=(label_whats_this))==null?'':__t)+
 '</a></li>\n        </ul>\n    </li>\n';
- } 
+ }
 __p+='\n';
 }
 return __p;
@@ -45342,7 +45342,7 @@ return __p;
             // relevant objects or classes.
             //
             // New functions which don't exist yet can also be added.
- 
+
             _initialize: function () {
                 this.__super__._initialize.apply(this, arguments);
                 this.otr = new this.OTR();
@@ -45417,7 +45417,7 @@ return __p;
                         }
                     }
                 },
-                
+
                 getSession: function (callback) {
                     var converse = this.__super__.converse;
                     var cipher = CryptoJS.lib.PasswordBasedCipher;
@@ -45694,7 +45694,7 @@ return __p;
                     ev.stopPropagation();
                     this.$el.find('.toggle-otr ul').slideToggle(200);
                 },
-                
+
                 getOTRTooltip: function () {
                     var data = this.model.toJSON();
                     if (data.otr_status === UNENCRYPTED) {
@@ -45925,7 +45925,7 @@ return __p;
         _ = converse_api.env._;
     // For translations
     var __ = utils.__.bind(converse);
-    
+
     // Add Strophe Namespaces
     Strophe.addNamespace('REGISTER', 'jabber:iq:register');
 
@@ -46417,9 +46417,9 @@ return __p;
 * File: strophe.ping.js
 * A Strophe plugin for XMPP Ping ( http://xmpp.org/extensions/xep-0199.html )
 */
-/* 
+/*
 * AMD Support added by Thierry
-* 
+*
 */
 
 (function (root, factory) {
@@ -46529,7 +46529,7 @@ Strophe.addConnectionPlugin('ping', {
     var Strophe = converse_api.env.Strophe;
     // Other necessary globals
     var _ = converse_api.env._;
-    
+
     converse_api.plugins.add('converse-ping', {
 
         initialize: function () {
@@ -46901,9 +46901,9 @@ __p+=''+
 ' <span id="minimized-count">('+
 ((__t=(num_minimized))==null?'':__t)+
 ')</span>\n<span class="unread-message-count"\n    ';
- if (!num_unread) { 
+ if (!num_unread) {
 __p+=' style="display: none" ';
- } 
+ }
 __p+='\n    href="#">'+
 ((__t=(num_unread))==null?'':__t)+
 '</span>\n';
@@ -46916,9 +46916,9 @@ define('tpl!trimmed_chat', [],function () { return function(obj){
 var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
 with(obj||{}){
 __p+='<a class="chatbox-btn close-chatbox-button icon-close"></a>\n<a class="chat-head-message-count" \n    ';
- if (!num_unread) { 
+ if (!num_unread) {
 __p+=' style="display: none" ';
- } 
+ }
 __p+='\n    href="#">'+
 ((__t=(num_unread))==null?'':__t)+
 '</a>\n<a href="#" class="restore-chat" title="'+
