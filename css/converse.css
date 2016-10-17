@@ -5,7 +5,7 @@
  * Copyright (c) 2012-2016, JC Brand <jc@opkode.com>
  * Licensed under the Mozilla Public License
  */
-/* 
+/*
     Color scheme helpers:
     https://coolors.co/app/264653-2a9d8f-e9c46a-f4a261-e76f51
     http://paletton.com/#uid=53f0u0knsvIdILAj5Cftgu3uBmZ
@@ -1162,7 +1162,7 @@
     border-radius: 4px; }
   #conversejs .button-primary {
     color: white;
-    background-color: #2AC611; }
+    background-color: #577BDD; }
   #conversejs .button-secondary {
     color: white;
     background-color: #83A0D6; }
@@ -1211,6 +1211,9 @@
   border-radius: 4px;
   bottom: 6px;
   display: block;
+  margin-bottom: 10vh;
+  margin-right: -10vw;
+  width: 40vw;
   position: absolute; }
   @media screen and (max-height: 450px) {
     #conversejs .flyout {
@@ -1297,7 +1300,8 @@
     height: 450px;
     min-height: 225px;
     min-width: 200px;
-    width: 200px;
+    width: 400px;
+    margin-right: -200px;
     z-index: 1; }
     @media screen and (max-height: 450px) {
       #conversejs .chatbox .box-flyout {
