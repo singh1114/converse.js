@@ -14,6 +14,7 @@
     <link type="text/css" rel="stylesheet" media="screen" href="css/theme.css" />
     <link type="text/css" rel="stylesheet" media="screen" href="css/converse.css" />
     <script type="text/javascript" src="analytics.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <noscript><p><img src="//stats.opkode.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
     <![if gte IE 9]>
         <script src="dist/converse.js"></script>
@@ -23,7 +24,26 @@
     <script data-main="main" src="components/requirejs/require.js"></script>
     <!-- For require.js -->
   </head>
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light"><strong>Sun..eh..a..G</strong></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <!-- ADD some list elements to show something-->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
   </body>
   <script>
